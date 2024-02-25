@@ -50,8 +50,8 @@ export class Route {
 
   /**
    * @param {net.Socket} socket
-   * @param {import('./request').Request} request
-   * @param {import('./response').Response} response
+   * @param {import('./request.js').Request} request
+   * @param {import('./response.js').Response} response
    */
   call(socket, request, response) {
     if (!this.methods.includes(request.method))
